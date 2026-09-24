@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<base href="./">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>City Rush</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="carga"><h1>CITY RUSH</h1><div class="barra"><i id="cb"></i></div><p id="ct">Carregando…</p></div>
+<canvas id="c"></canvas>
+<div id="hud">
+  <div id="bars"><div class="bar hp"><i id="hp"></i></div><div class="bar st"><i id="st"></i></div><div id="money">$0</div></div>
+  <div id="stars"></div><div id="alvo"></div><div id="info"></div><canvas id="mini" width="160" height="160"></canvas><div id="missao"></div><div id="dica"></div><div id="nt"></div><div id="hud2"></div>
+</div>
+<canvas id="mapa" width="700" height="700"></canvas>
+<div id="inv"></div><div id="escolha"></div><div id="tel"></div><div id="wasted">VOCÊ MORREU</div>
+<div id="menu"><h1>CITY RUSH</h1><p>Clique para jogar</p>
+<div id="volbox" onclick="event.stopPropagation()">Volume <input id="vol" type="range" min="0" max="100" value="60"></div>
+<small>WASD mover · Shift correr · C agachar · Espaço pular/freio · Mouse esq. atira/soca, dir. mira · R recarregar · 1-7 armas (7 = punhos)<br>E entrar em carro/loja/casa · H buzina · ← → rádio no carro · G falar com NPC · V câmera · Tab inventário · M mapa · T celular · K chuva · P foto · Y split-screen (J2: I J K L, U pula, O soca)</small>
+<button id="novo" onclick="event.stopPropagation()">Novo jogo (apaga o progresso salvo)</button></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

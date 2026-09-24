@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:'Rajdhani',sans-serif;color:#fff}
+#c{position:fixed;inset:0;width:100%;height:100%}
+#hud{position:fixed;inset:0;pointer-events:none;font-weight:700;font-size:22px;text-shadow:0 2px 4px #000}
+#bars{position:absolute;top:16px;left:16px;width:220px}
+.bar{height:12px;background:#0008;margin-bottom:6px;border:1px solid #fff4}
+.bar i{display:block;height:100%;width:100%;transition:width .2s}
+.hp i{background:#e74c3c}.st i{background:#f1c40f}
+#money{color:#ffcc00}
+#stars{position:absolute;top:16px;right:20px;color:#ffcc00;font-size:30px}
+#info{position:absolute;right:20px;bottom:16px}
+#alvo{position:absolute;left:50%;top:50%;width:8px;height:8px;margin:-4px;border-radius:50%;background:#f00}
+#menu{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#000a;backdrop-filter:blur(10px);cursor:pointer;text-align:center;padding:20px}
+#menu h1{font-size:72px;margin:0;color:#ffcc00;letter-spacing:4px}
+#menu.off{display:none}
+#mini{position:absolute;left:16px;bottom:16px;border-radius:50%;border:3px solid #ffcc00}
+#mapa{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);max-width:90vmin;border:3px solid #ffcc00;display:none}
+#mapa.on{display:block}
+#inv,#escolha{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#000c;border:2px solid #ffcc00;padding:20px 30px;font-size:22px;display:none;min-width:300px}
+#inv.on,#escolha.on{display:block}
+#escolha button{display:block;width:100%;margin-top:10px;padding:10px;font:inherit;font-weight:700;background:#111;color:#fff;border:2px solid #ffcc00;transition:.3s ease}
+#escolha button:hover{transform:scale(1.05);background:#ffcc00;color:#000}
+#nt{position:absolute;top:70px;left:50%;transform:translateX(-50%);background:#000b;border-left:4px solid #ffcc00;padding:6px 16px;opacity:0;transition:opacity .3s}
+#nt.on{opacity:1}
+#volbox{font-size:20px}
+#missao{position:absolute;left:16px;top:110px;font-size:20px;max-width:320px;color:#fff}
+body.foto #hud,body.foto #mini{display:none}
+#tel{position:fixed;right:30px;top:50%;transform:translateY(-50%);width:360px;max-height:82vh;overflow:auto;background:#111;border:3px solid #ffcc00;border-radius:28px;padding:16px;display:none;z-index:4}
+#tel.on{display:block}
+#tel button{display:block;width:100%;margin-top:8px;padding:10px;font:inherit;font-weight:700;background:#222;color:#fff;border:1px solid #ffcc00;border-radius:10px;cursor:pointer;transition:.3s ease}
+#tel button:hover{transform:scale(1.03);background:#ffcc00;color:#000}
+#tel .tb{display:flex;gap:4px}#tel .tb button{margin:0;padding:6px 2px;font-size:14px}#tel .tb .sel{background:#ffcc00;color:#000}
+#wasted{position:fixed;inset:0;display:none;align-items:center;justify-content:center;font-size:96px;font-weight:700;color:#c00;background:#000a;z-index:5;letter-spacing:6px}
+#wasted.on{display:flex}
+#dica{position:absolute;left:50%;bottom:80px;transform:translateX(-50%);color:#ffcc00;font-size:24px}
+#carga{position:fixed;inset:0;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:10;transition:opacity .6s}
+#carga.off{opacity:0;pointer-events:none}
+#carga h1{font-size:90px;margin:0;color:#ffcc00;letter-spacing:8px}
+.barra{width:360px;height:10px;background:#222;border:1px solid #ffcc00}.barra i{display:block;height:100%;width:0;background:#ffcc00;transition:width .3s}
+#hud2{position:absolute;right:20px;bottom:60px;color:#fff;display:none}
+#novo{margin-top:12px;padding:8px 14px;font:inherit;background:#222;color:#fff;border:1px solid #888;cursor:pointer}
+#tel .tb{flex-wrap:wrap}#tel .tb button{flex:1 1 30%}
